@@ -11,6 +11,6 @@ public class InvalidCampaignException : Exception
     public static void ThrowIfInvalid(string? item, string message = DefaultErrorMessage)
     {
         if (string.IsNullOrEmpty(item))
-            throw new InvalidUrlException(message);
+            throw new InvalidCampaignException(message);
     }
 }
